@@ -27,35 +27,35 @@ Autogenerate Laravel routes, models and controllers for all the tables of your m
 	- The `whereSeparator` parameter: which separator token you want to use in the `where` parameter?
 	By default, this is `/`.
 - All the methods have their own (customizable) lifecycle (that follow the same decorator design pattern inside):
-	- Index
-		- indexStepValidate
-		- indexStepFields
-		- indexStepJoins
-		- indexStepWhere
-		- indexStepSearch
-		- indexStepSort
-		- indexStepPage
-		- indexStepQuery
-		- indexStepRespond
-	- Show:
-		- showStepQuery
-		- showStepRespond
-	- Store:
-		- storeStepValidate
-		- storeStepFill
-		- storeStepQuery
-		- storeStepRespond
-	- Update:
-		- updateStepValidate
-		- updateStepFind
-		- updateStepFill
-		- updateStepQuery
-		- updateStepRespond
-	- Destroy:
-		- destroyStepFind
-		- destroyStepQuery
-		- destroyStepRespond
-- Store and update methods with customizable validations and error messages out-of-the-box (also `index`).
+	- `index`:
+		- `indexStepValidate`
+		- `indexStepFields`
+		- `indexStepJoins`
+		- `indexStepWhere`
+		- `indexStepSearch`
+		- `indexStepSort`
+		- `indexStepPage`
+		- `indexStepQuery`
+		- `indexStepRespond`
+	- `show`:
+		- `showStepQuery`
+		- `showStepRespond`
+	- `store`:
+		- `storeStepValidate`
+		- `storeStepFill`
+		- `storeStepQuery`
+		- `storeStepRespond`
+	- `update`:
+		- `updateStepValidate`
+		- `updateStepFind`
+		- `updateStepFill`
+		- `updateStepQuery`
+		- `updateStepRespond`
+	- `destroy`:
+		- `destroyStepFind`
+		- `destroyStepQuery`
+		- `destroyStepRespond`
+- `store` and `update` methods with customizable validations and error messages out-of-the-box (also `index`).
 - All HTTP status codes are available to be used in your JSON responses.
 - Custom `jsonSuccess` and `jsonError` methods.
 
