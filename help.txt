@@ -1,0 +1,85 @@
+| | 
+| |==============================
+| |== Welcome to mysql2laravel ==
+| |==============================
+| | 
+| |----------
+| | 0. Index
+| |----------
+| | 
+| | 1. What is this about?
+| | 2. How can I use it?
+| | 3. Which options do I have?
+| | 
+| |------------------------
+| | 1. What is this about?
+| |------------------------
+| | 
+| | This program can help you to automatically generate...
+| | 
+| |  - Laravel models
+| |  - Laravel controllers
+| |  - Laravel routes
+| | 
+| | ...from any existing MySQL database.
+| | 
+| |----------------------
+| | 2. How can I use it?
+| |----------------------
+| | 
+| | You simply need:
+| | 
+| |  - To have PHP installed as command line interface
+| |  - To have mysql2laravel decompressed and accessible
+| | 
+| | Then, you need to run from your command line:
+| | 
+| | $ php path/to/mysql2laravel/run.php --database=$MY_DB
+| | 
+| | And you will get automatically generated all the files
+| | under <path/to/mysql2laravel/output> folder.
+| | 
+| | Then, what you have to do is to copy the folders under 
+| | <output> and paste them in your project.
+| | 
+| | The OS will ask you to merge and replace the files.
+| | 
+| | [!] Be careful with this step if you have files 
+| | already working in your project, because accepting 
+| | will cause to override your current project with the 
+| | generated files and folders.
+| | 
+| |-----------------------------
+| | 3. Which options do I have?
+| |-----------------------------
+| | 
+| | These are the options available in the script.
+| | 
+| |  --database (required). The database you want to cover.
+| |    · No default value.
+| |  --user (optional). The database user to use.
+| |    · By default: "root"
+| |  --password (optional). The user's password to use.
+| |    · By default: ""
+| |  --host (optional). The host you want to target.
+| |    · By default: "localhost"
+| | 
+| | 
+| | ......................................................
+| | 
+| | 
+| | So, to run this program, you have to:
+| | 
+| | $ php run.php
+| |   --database=THE_DATABASE
+| |   --user=THE_USER
+| |   --password=THE_PASSWORD_IF_ANY
+| |   --host=THE_HOST
+| | 
+| | Then, manually, copy and paste the generated <output>
+| | into your running Laravel project.
+| | 
+| | 
+| | ......................................................
+| | 
+
